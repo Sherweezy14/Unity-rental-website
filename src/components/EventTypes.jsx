@@ -1,26 +1,72 @@
+import weddingImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/wedding.png"
+import birthdayImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/birthday.JPG"
+import babyShowerImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/babyshower.png"
+import culturalImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/cultural.JPG"
+import corporateImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/corporate.png"
+import repastImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/repast1.png"
+
+
+import {
+  FaHeart,
+  FaCross,
+  FaBirthdayCake,
+  FaBriefcase,
+  FaBaby,
+  FaMusic,
+} from "react-icons/fa";
+
+
+
 const events = [
-    "Weddings",
-    "Repasts",
-    "Birthday Parties",
-    "Corporate Events",
-    "Baby Showers",
-    "Cultural Events",
-  ];
+  {
+    title: "Weddings",
+    image: weddingImg,
+    favcon: <FaHeart />
+  },
+  {
+    title: "Repasts",
+    image: repastImg,
+    favcon: <FaCross />
+  },
+  {
+    title: "Birthdays",
+    image: birthdayImg,
+    favcon: <FaBirthdayCake />
+  },
+  {
+    title: "Corporate",
+    image: corporateImg,
+    favcon: <FaBriefcase />
+  },
+  {
+    title: "Baby Showers",
+    image: babyShowerImg,
+    favcon: <FaBaby />
+  },
+  {
+    title: "Cultural",
+    image: culturalImg,
+    favcon: <FaMusic />
+  },
+];
   
   export default function EventTypes() {
     return (
-      <section className="py-20 px-8">
-        <h2 className="text-4xl font-serif text-center mb-12">
+      <section className=" px-8">
+        <h2 className="text-2xl font-serif text-center mb-2">
           Perfect For Any Occasion
         </h2>
   
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
           {events.map((event) => (
             <div
-              key={event}
-              className="h-64 rounded-xl bg-slate-200 flex items-end p-6 shadow-lg"
+              key={event.title}
+               className="h-36  bg-cover  bg-center rounded-xs bg-slate-200 flex flex-col justify-end items-center p-4 shadow-lg" style={{
+                backgroundImage: `url(${event.image})`,
+              }}
             >
-              <h3 className="text-2xl font-semibold">{event}</h3>
+              <p className="text-white text-xl drop-shadow-black drop-shadow-xs"> {event.favcon} </p>
+              <h3 className="text-2xl text-center drop-shadow-black drop-shadow-lg text-white font-thin">{event.title}</h3>
             </div>
           ))}
         </div>

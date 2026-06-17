@@ -1,3 +1,5 @@
+import grandBallroomImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/grandballroom.jpg"
+import privateEventRoomImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/privateroom.PNG"
 export default function VenueSpaces() {
     return (
       <section className="bg-white py-20 px-8">
@@ -8,9 +10,9 @@ export default function VenueSpaces() {
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="bg-white shadow-xl rounded-xl overflow-hidden">
             <img
-              src="/ballroom.jpg"
+              src={grandBallroomImg}
               alt=""
-              className="h-72 w-full object-cover"
+              className="h-96 w-full object-cover"
             />
   
             <div className="p-6">
@@ -30,9 +32,9 @@ export default function VenueSpaces() {
   
           <div className="bg-white shadow-xl rounded-xl overflow-hidden">
             <img
-              src="/small-room.jpg"
+              src={privateEventRoomImg}
               alt=""
-              className="h-72 w-full object-cover"
+              className="h-96 w-full object-cover"
             />
   
             <div className="p-6">
