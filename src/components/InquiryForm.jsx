@@ -13,34 +13,39 @@ export default function InquiryForm() {
             </p>
           </div>
   
-          <form className="bg-slate-50 rounded-2xl p-8 shadow-xl">
+          <form action="https://formspree.io/f/xdavvbbe"
+          method="POST" className="bg-slate-50 rounded-2xl p-8 shadow-xl">
   
             <div className="grid md:grid-cols-2 gap-5">
   
               <input
                 type="text"
+                name="Name"
                 placeholder="Full Name"
                 className="border p-4 rounded-lg"
               />
   
               <input
                 type="email"
+                name="email"
                 placeholder="Email"
                 className="border p-4 rounded-lg"
               />
   
               <input
                 type="tel"
+                name="number"
                 placeholder="Phone Number"
                 className="border p-4 rounded-lg"
               />
   
               <input
                 type="date"
+                name="date"
                 className="border p-4 rounded-lg"
               />
   
-              <select className="border p-4 rounded-lg">
+              <select name="eventType" className="border p-4 rounded-lg">
                 <option>Event Type</option>
                 <option>Wedding</option>
                 <option>Birthday Party</option>
@@ -51,6 +56,7 @@ export default function InquiryForm() {
   
               <input
                 type="number"
+                name="guestCount"
                 placeholder="Guest Count"
                 className="border p-4 rounded-lg"
               />
@@ -59,6 +65,7 @@ export default function InquiryForm() {
   
             <textarea
               rows="5"
+              name="aboutEvent"
               placeholder="Tell us about your event..."
               className="w-full border p-4 rounded-lg mt-5"
             />
