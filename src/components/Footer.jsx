@@ -1,10 +1,10 @@
-import { FaFacebook, FaInstagram, FaPhone } from "react-icons/fa";
+import { FaFacebook, FaInstagram,FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white py-16 px-6">
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 text-center gap-10">
 
         <div>
           <h2 className="text-3xl font-serif">
@@ -27,10 +27,19 @@ export default function Footer() {
             Contact
           </h3>
 
-          <p>10 Dunbar Avenue</p>
-          <p>Dorchester, MA 02124</p>
+          <div className="flex items-center justify-center gap-2">
+            <FaMapMarkerAlt />
 
-          <p className="mt-3 flex items-center gap-2">
+            <a
+              href="https://maps.google.com/?q=10+Dunbar+Ave+Dorchester+MA+02124"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-amber-500"
+            >
+              10 Dunbar Ave, Dorchester, MA 02124
+            </a>
+          </div>
+          <p className="mt-3 flex items-center justify-center gap-2">
             <FaPhone />
             <a href="tel:6178909657"> (617-890-9657) </a> 
           </p>
@@ -41,7 +50,7 @@ export default function Footer() {
             Follow Us
           </h3>
 
-          <div className="flex gap-5 text-2xl">
+          <div className="flex justify-center gap-5 text-2xl">
             <FaFacebook />
             <FaInstagram />
           </div>
