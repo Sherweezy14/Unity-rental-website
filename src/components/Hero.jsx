@@ -23,13 +23,16 @@ export default function Hero() {
     </div>
 
     <div className="flex flex-col md:flex-row gap-4 mt-8">
-      <button className="flex items-center bg-amber-600 text-white px-6 py-3 rounded">
-      <span className="text-white mr-1"> <FaCalendarAlt /> </span> Schedule A Tour
-      </button>
-
-      <button className="flex items-center border border-b-black px-6 py-3 rounded">
-      <span className="text-amber-600 mr-1"> <FaDollarSign /> </span> Get Pricing
-      </button>
+      <a href="#contact">
+        <button className="flex items-center bg-amber-600 text-white px-6 py-3 rounded">
+        <span className="text-white mr-1"> <FaCalendarAlt /> </span> Schedule A Tour
+        </button>
+      </a>
+      <a href="#pricing">
+        <button className="flex items-center border border-b-black px-6 py-3 rounded">
+        <span className="text-amber-600 mr-1"> <FaDollarSign /> </span> Get Pricing
+        </button>
+      </a>
     </div>
 
   </div>

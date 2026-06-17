@@ -3,8 +3,8 @@ import birthdayImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/asset
 import babyShowerImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/babyshower.png"
 import culturalImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/cultural.JPG"
 import corporateImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/corporate.png"
-import repastImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/repast1.png"
-
+import repastImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/repast.JPG"
+import { useState } from "react"
 
 import {
   FaHeart,
@@ -51,8 +51,9 @@ const events = [
 ];
   
   export default function EventTypes() {
+    const [selectedImage,setSelectedImage] = useState(null)
     return (
-      <section className=" px-8">
+      <section id="eventtypes" className="scroll-mt-26 px-8">
         <h2 className="text-2xl font-serif text-center mb-2">
           Perfect For Any Occasion
         </h2>
@@ -61,6 +62,7 @@ const events = [
           {events.map((event) => (
             <div
               key={event.title}
+               onClick={()=>setSelectedImage(event.image)} 
                className="h-36  bg-cover  bg-center rounded-xs bg-slate-200 flex flex-col justify-end items-center p-4 shadow-lg" style={{
                 backgroundImage: `url(${event.image})`,
               }}
@@ -70,6 +72,18 @@ const events = [
             </div>
           ))}
         </div>
+        {selectedImage && (
+        <div
+          onClick={() => setSelectedImage(null)}
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-6"
+        >
+          <img
+            src={selectedImage}
+            alt="Event preview"
+            className="max-w-full max-h-[85vh] rounded-xl shadow-2xl"
+          />
+        </div>
+      )}
       </section>
     );
   }

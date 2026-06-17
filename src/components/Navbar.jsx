@@ -3,7 +3,7 @@ import { FaPhone } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
+    <header  className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         
         <div className="text-center">
@@ -15,25 +15,24 @@ export default function Navbar() {
           </p>
         </div>
 
-        <nav className="hidden md:flex gap-8 text-slate-700 font-medium">
-          <Link to="/">Home</Link>
-          <Link to="/weddings">Weddings</Link>
-          <Link to="/spaces">Venue Spaces</Link>
-          <Link to="/pricing">Pricing</Link>
-          <Link to="/contact">Reviews</Link>
-          <Link to="/contact">About</Link>
-          <Link to="/contact">Contact</Link>
+        <nav className="hidden md:flex gap-8 text-slate-700 text-xl font-medium">
+          <a href="#">Home</a>
+          <a href="#eventtypes">Event Types</a>
+          <a href="#spaces">Venue Spaces</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
         </nav>
         <div className="text-center">
  
-          <a className="flex  items-center gap-1" href="tel:6172698383" >
+          <a className="flex  items-center gap-1" href="tel:6178909657" >
           <span className="text-amber-600"> <FaPhone /> </span>
-            (617) 269-8383
+            (617) 890-9657
           </a>
-          
-          <button className="bg-amber-600 hover:bg-amber-700 text-white px-5 py-3 rounded-lg transition">
-          Schedule Tour
-          </button>
+          <a href="#contact">
+            <button className="bg-amber-600 hover:bg-amber-700 text-white px-5 py-3 rounded-lg transition">
+            Schedule Tour
+            </button>
+          </a>
         </div>
       </div>
     </header>

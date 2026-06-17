@@ -2,8 +2,8 @@ import grandBallroomImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/
 import privateEventRoomImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/privateroom.PNG"
 export default function VenueSpaces() {
     return (
-      <section className="bg-white py-20 px-8">
-        <h2 className="text-4xl font-serif text-center mb-12">
+      <section  id="spaces" className="bg-white py-20 px-8 scroll-mt-24">
+        <h2  className="text-4xl font-serif text-center mb-12">
           Our Spaces
         </h2>
   
@@ -44,6 +44,9 @@ export default function VenueSpaces() {
   
               <p className="text-amber-600 font-semibold mt-2">
                 Up To 100 Guests
+              </p>
+              <p className="mt-4">
+                Perfect for birthdays, repasts, baby showers, gender reveals, meetings and more.
               </p>
             </div>
           </div>

@@ -32,7 +32,7 @@ export default function Footer() {
 
           <p className="mt-3 flex items-center gap-2">
             <FaPhone />
-            (617) 269-8383
+            <a href="tel:6178909657"> (617-890-9657) </a> 
           </p>
         </div>
 
