@@ -58,17 +58,17 @@ const events = [
           Perfect For Any Occasion
         </h2>
   
-        <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid md:grid-cols-3  gap-6">
           {events.map((event) => (
             <div
               key={event.title}
                onClick={()=>setSelectedImage(event.image)} 
-               className="h-36  bg-cover  bg-center rounded-xs bg-slate-200 flex flex-col justify-end items-center p-4 shadow-lg" style={{
+               className="h-56  bg-cover  bg-center rounded-xs bg-slate-200 flex flex-col justify-end items-center p-4 shadow-lg" style={{
                 backgroundImage: `url(${event.image})`,
               }}
             >
-              <p className="text-white text-xl drop-shadow-black drop-shadow-xs"> {event.favcon} </p>
-              <h3 className="text-2xl text-center drop-shadow-black drop-shadow-lg text-white font-thin">{event.title}</h3>
+              <p className="text-white text-4xl drop-shadow-black drop-shadow-xs"> {event.favcon} </p>
+              <h3 className="text-5xl text-center drop-shadow-black drop-shadow-lg text-white font-medium">{event.title}</h3>
             </div>
           ))}
         </div>

@@ -4,7 +4,7 @@ import heroImg from "../assets/wedding.png"
 export default function Hero() {
     return (
       <section
-  className="min-h-[550px] bg-cover bg-center flex items-center"
+  className="min-h-137.5 bg-cover bg-center flex items-center"
   style={{
     backgroundImage:
     `url(${heroImg})`,
