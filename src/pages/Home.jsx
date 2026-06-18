@@ -11,10 +11,10 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <EventTypes id="eventtypes" />
-      <VenueSpaces id="spaces" />
-      <Pricing id="prices" />
-      <InquiryForm id="contact" />
+      <EventTypes />
+      <VenueSpaces />
+      <Pricing />
+      <InquiryForm />
       <Footer />
     </>
   );

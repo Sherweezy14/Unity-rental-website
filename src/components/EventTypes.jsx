@@ -1,7 +1,7 @@
 import weddingImg from "../assets/wedding.png"
 import birthdayImg from "../assets/birthday.JPG"
 import babyShowerImg from "../assets/babyshower.png"
-import culturalImg from "../assets/cultural.JPG"
+import culturalImg from "../assets/Cultural.JPG"
 import corporateImg from "../assets/corporate.png"
 import repastImg from "../assets/repast.JPG"
 import { useState } from "react"
