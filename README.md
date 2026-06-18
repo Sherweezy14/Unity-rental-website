@@ -6,6 +6,10 @@ The Unity Event Hall Website is a modern, responsive marketing website built for
 
 The primary goal of the project was to create a professional online presence that increases venue visibility, improves customer trust, and generates rental leads.
 
+## Screenshot
+
+![Unity Event Hall Website](./screenshot.png)
+
 ## Live Website
 
 https://www.unityeventhall.com
