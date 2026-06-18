@@ -15,12 +15,12 @@ export default function Navbar() {
           </p>
         </div>
 
-        <nav className="hidden md:flex gap-8 text-slate-700 text-xl font-medium">
+        <nav className="hidden lg:flex gap-8 text-slate-700 text-xl font-medium">
           <a href="#">Home</a>
           <a href="#eventtypes">Event Types</a>
           <a href="#spaces">Venue Spaces</a>
           <a href="#pricing">Pricing</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Schedule a Tour</a>
         </nav>
         <div className="text-center">
  
