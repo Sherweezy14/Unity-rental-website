@@ -1,9 +1,9 @@
-import weddingImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/wedding.png"
-import birthdayImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/birthday.JPG"
-import babyShowerImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/babyshower.png"
-import culturalImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/cultural.JPG"
-import corporateImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/corporate.png"
-import repastImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/repast.JPG"
+import weddingImg from "../assets/wedding.png"
+import birthdayImg from "../assets/birthday.JPG"
+import babyShowerImg from "../assets/babyshower.png"
+import culturalImg from "../assets/cultural.JPG"
+import corporateImg from "../assets/corporate.png"
+import repastImg from "../assets/repast.JPG"
 import { useState } from "react"
 
 import {

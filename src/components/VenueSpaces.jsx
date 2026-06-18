@@ -1,5 +1,5 @@
-import grandBallroomImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/grandballroom.jpg"
-import privateEventRoomImg from "/Users/sherwyn/Downloads/Unity-rental-website/src/assets/privateroom.PNG"
+import grandBallroomImg from "../assets/grandballroom.jpg"
+import privateEventRoomImg from "../assets/privateroom.PNG"
 export default function VenueSpaces() {
     return (
       <section  id="spaces" className="bg-white py-20 px-8 scroll-mt-24">
