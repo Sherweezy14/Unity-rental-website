@@ -8,7 +8,7 @@ The primary goal of the project was to create a professional online presence tha
 
 ## Screenshot
 
-![Unity Event Hall Website](./screenshot.png)
+![Unity Event Hall Website](./Screen-Shot.png)
 
 ## Live Website
 
