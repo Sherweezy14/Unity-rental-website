@@ -1,4 +1,5 @@
 import { FaCalendarAlt, FaDollarSign } from "react-icons/fa";
+import heroImg from "../assets/wedding.png"
 
 export default function Hero() {
     return (
@@ -6,7 +7,7 @@ export default function Hero() {
   className="min-h-[550px] bg-cover bg-center flex items-center"
   style={{
     backgroundImage:
-      "url('src/assets/Screen Shot 2026-06-17 at 1.38.05 AM.png')",
+    `url(${heroImg})`,
   }}
 >
   <div className="ml-8 md:ml-20 bg-white/90 p-8 rounded-xl max-w-xl shadow-xl">
