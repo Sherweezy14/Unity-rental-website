@@ -41,8 +41,7 @@ export default function InquiryForm() {
         </div>
 
         <form
-          action={handleSubmit}
-          method="POST"
+          onSubmit={handleSubmit}
           className="bg-slate-50 rounded-2xl p-8 shadow-xl"
         >
           <div className="grid md:grid-cols-2 gap-5">
@@ -76,6 +75,8 @@ export default function InquiryForm() {
               <option>Repast</option>
               <option>Corporate Event</option>
               <option>Baby Shower</option>
+              <option>Quinceanera</option>
+              <option>Anniversary</option>
             </select>
 
             <input
