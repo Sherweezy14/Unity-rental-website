@@ -1,5 +1,11 @@
-import ReactPixel from "react-facebook-pixel";
+import ReactPixelImport from "react-facebook-pixel";
 
-ReactPixel.init(import.meta.env.VITE_META_PIXEL);
+const ReactPixel = ReactPixelImport.default ?? ReactPixelImport;
+
+const pixelId = import.meta.env.VITE_META_PIXEL_ID;
+
+if (pixelId && typeof ReactPixel.init === "function") {
+  ReactPixel.init(pixelId);
+}
 
 export default ReactPixel;
