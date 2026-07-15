@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import { FaPhone } from "react-icons/fa";
-import ReactPixel from "../util/MetaPixel";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
@@ -24,7 +22,7 @@ export default function Navbar() {
         <div className="text-center">
           <a
             className="flex  items-center gap-1"
-            onClick={() => ReactPixel.track("contact")}
+            onClick={() => window.fbq("track", "Contact")}
             href="tel:6178909657"
           >
             <span className="text-amber-600">

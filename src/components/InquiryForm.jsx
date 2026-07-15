@@ -1,18 +1,9 @@
-import ReactPixel from "../util/MetaPixel";
+import { trackMetaLead, trackRentalInquiry } from "../util/MetaPixel";
 export default function InquiryForm() {
   async function handleSubmit(e) {
     e.preventDefault();
 
     const formData = new FormData(e.target);
-
-    // Tell Meta this is a lead
-    ReactPixel.track("Lead");
-
-    // custom event
-    ReactPixel.trackCustom("RentalInquiry", {
-      eventType: formData.get("eventType"),
-      guestCount: formData.get("guestCount"),
-    });
 
     const response = await fetch("https://formspree.io/f/xdavvbbe", {
       method: "POST",
@@ -24,6 +15,13 @@ export default function InquiryForm() {
 
     if (response.ok) {
       alert("Thank you! We'll contact you shortly.");
+      // Tell Meta this is a lead
+      trackMetaLead();
+      // custom event
+      trackRentalInquiry({
+        eventType: formData.get("eventType"),
+        guestCount: formData.get("guestCount"),
+      });
       e.target.reset();
     }
   }

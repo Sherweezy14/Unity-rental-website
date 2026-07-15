@@ -4,7 +4,6 @@ import {
   FaMapMarkerAlt,
   FaPhone,
 } from "react-icons/fa";
-import ReactPixel from "../util/MetaPixel";
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white py-16 px-6">
@@ -41,7 +40,7 @@ export default function Footer() {
             <FaPhone />
             <a
               href="tel:6178909657"
-              onClick={() => ReactPixel.track("contact")}
+              onClick={() => window.fbq("track", "Contact")}
             >
               {" "}
               (617-890-9657){" "}
